@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backendEcommerce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #logo {
+            width: 400px;
+            height: auto;
+            margin-bottom: 10px; 
+        }
+
+        #start-button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="logo" src="./img/backendEcommerce.jpg" alt="Logo de Tu Sitio Web">
+    <button id="start-button" onclick="goToHome()">Comenzar</button>
+
+    <script>
+
+        function goToHome() {
+            window.location.href = "http://localhost:8080/login";
+        }
+    
+    </script>
+</body>
+
+</html>
